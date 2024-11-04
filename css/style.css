@@ -1,0 +1,162 @@
+body {
+    background-color: #003366;
+    color: #fff;
+    padding: 2em 15em;
+}
+
+h1 {
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    background-color: #000;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 0 0 #e7e7e7;
+}
+
+h1 img {
+    width: 3em;
+    margin-bottom: 0.2em;
+}
+
+@keyframes battement {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.coeur {
+    display: inline-block;
+    animation: battement 0.8s infinite;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #66ff33;
+    margin-right: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu div:nth-child(2) img {
+    width: 30px;
+}
+
+#presentation h2 {
+    color: #0099ff;
+}
+
+#presentation p {
+    font-weight: 600;
+}
+
+#presentation span {
+    color: #66ff33;
+    text-decoration: underline;
+}
+
+figure {
+    position: relative;
+    border: solid 2px #0099ff;
+    text-align: center;
+    padding: 2em;
+}
+
+figure figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f05768;
+    padding: 0 1em;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#principale {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#galerie {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "i1 i1 i2 i3"
+        "i1 i1 i4 i5"
+    ;
+    justify-items: center;
+    gap: 1em;
+}
+
+#galerie img {
+    width: 100%;
+}
+
+#galerie img:hover {
+    width: 100%;
+    transform: scale(1.5);
+    transition: all .8s;
+    cursor: pointer;
+}
+
+#image01 {
+    grid-area: i1;
+}
+
+#image02 {
+    grid-area: i2;
+}
+
+#image03 {
+    grid-area: i3;
+}
+
+#image04 {
+    grid-area: i4;
+}
+
+#image05 {
+    grid-area: i5;
+}
+
+#contact {
+    width: 25%;
+    background-color: #004488;
+    color: #00cdff;
+    padding: 1em;
+    align-self: flex-start;
+}
+
+#contact h3 {
+    text-transform: uppercase;
+}
+
+#contact p {
+    color: #66ff33;
+}
+
+#contact a {
+    color: #66ff33;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #0099ff;
+}
